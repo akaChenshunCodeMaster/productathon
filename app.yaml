@@ -1,6 +1,0 @@
-runtime: nodejs18
-   # Replace with your desired Node.js runtime version
-
-handlers:
-  - url: /.*
-    script: auto
