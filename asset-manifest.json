@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/your-repo/static/css/main.e6c13ad2.css",
-    "main.js": "/your-repo/static/js/main.20fdd46b.js",
-    "static/js/453.ed3810f9.chunk.js": "/your-repo/static/js/453.ed3810f9.chunk.js",
-    "index.html": "/your-repo/index.html",
-    "main.e6c13ad2.css.map": "/your-repo/static/css/main.e6c13ad2.css.map",
-    "main.20fdd46b.js.map": "/your-repo/static/js/main.20fdd46b.js.map",
-    "453.ed3810f9.chunk.js.map": "/your-repo/static/js/453.ed3810f9.chunk.js.map"
+    "main.css": "/productathon/static/css/main.e6c13ad2.css",
+    "main.js": "/productathon/static/js/main.a0c1ea1b.js",
+    "static/js/453.ed3810f9.chunk.js": "/productathon/static/js/453.ed3810f9.chunk.js",
+    "index.html": "/productathon/index.html",
+    "main.e6c13ad2.css.map": "/productathon/static/css/main.e6c13ad2.css.map",
+    "main.a0c1ea1b.js.map": "/productathon/static/js/main.a0c1ea1b.js.map",
+    "453.ed3810f9.chunk.js.map": "/productathon/static/js/453.ed3810f9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.20fdd46b.js"
+    "static/js/main.a0c1ea1b.js"
   ]
 }
