@@ -7,7 +7,7 @@ function Header() {
   return (
     <header className={styles.header}>
       <img src={logo} alt="Logo" className={styles.logo} />
-      <h1 className={styles.title}>Foody</h1>
+      <h1 className={styles.title}>Munched</h1>
     </header>
   );
 }

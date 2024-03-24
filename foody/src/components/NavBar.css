@@ -15,6 +15,7 @@
   
 .nav-item {
     text-align: center;
+    text-decoration: none;
     padding: 0 10px; /* Padding around the nav items */
 }
   

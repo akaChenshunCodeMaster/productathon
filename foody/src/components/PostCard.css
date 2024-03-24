@@ -84,7 +84,19 @@
     display: flex;
     align-items: center;
   }
+
+  .restaurant-name a {
+    text-decoration: none; /* Removes underline */
+    color: #E74C3C; /* Specific color for restaurant names */
+    /* Add any other styles specific to restaurant name links */
+  }
   
+  .post-link {
+    text-decoration: none; /* Removes underline */
+    color: inherit; /* Inherits the text color from the parent */
+    /* Add any other styles you want for post links */
+  }
+
   
   /* Add media query for responsiveness */
   @media (max-width: 768px) {
