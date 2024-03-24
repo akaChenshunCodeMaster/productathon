@@ -1,0 +1,136 @@
+/* ExpandedPost.css */
+
+.expanded-post {
+  background: #FFFFFF;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.post-header {
+  display: flex;
+  align-items: center;
+}
+
+.user-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.username {
+    font-weight: bold;
+    margin-bottom: 4px; /* Spacing between full name and handle */
+  }
+  
+  .name {
+    color: #a9a9a9; /* Grey color for the handle */
+    margin-bottom: 4px; /* Spacing between handle and time */
+  }
+  
+  .post-time {
+    color: #a9a9a9; /* Grey color for the time */
+  }
+  
+.restaurant-name {
+  color: #E74C3C;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.post-title {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.post-description {
+  margin-bottom: 10px;
+}
+
+.post-image {
+    width: calc(100% - 20px); /* ensuring the image is not too wide */
+    max-width: 400px; /* max width can be adjusted */
+    border-radius: 10px;
+    margin: 10px auto; /* centering the image */
+    display: block;
+}
+
+.post-details {
+    display: flex;
+    justify-content: space-between; /* This will spread out the child elements evenly */
+    margin-top: 10px; /* Or whatever space you want between the image and these details */
+  }
+
+.price,
+.rating,
+.mood {
+  flex: 1; /* Each will take up equal space */
+  text-align: center; /* Centers the text within each flex item */
+  /* Add any other styles you have for these classes */
+}
+
+
+.price {
+  background: #E74C3C;
+  border-radius: 5px;
+  padding: 2px 5px;
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.post-interactions {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.comments-section {
+  margin-bottom: 10px;
+}
+
+.comment {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.comment-avatar {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+  }
+  
+.comment-username {
+font-weight: bold;
+color: #333; /* Or any color that fits your design */
+margin-right: 10px;
+}
+
+.add-comment {
+    display: flex;
+    margin-top: 10px;
+  }
+  
+  .add-comment input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ececec;
+    border-radius: 20px;
+    font-size: 0.9em;
+  }
+
+@media (max-width: 600px) {
+  .expanded-post {
+    margin: 0;
+    border-radius: 0;
+  }
+}

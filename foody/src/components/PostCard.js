@@ -14,10 +14,12 @@ const PostCard = ({ username, avatarSrc, time, location, title, description, ima
           <div className="post-time">{time} ago</div>
         </div>
       </div>
+      
       <div className="post-body">
         <div className="restaurant-name">
         <Link to={`/restaurant/${location.replace(/\s+/g, '-').toLowerCase()}`}>{location}</Link>
         </div>
+        <Link to="/post" className="post-link"> {/* Fixed path for all posts */}
         <div className="post-title">{title}</div>
         <div className="post-description">{description}</div>
         <img className="post-image" src={imageSrc} alt="Dish" />
@@ -26,6 +28,7 @@ const PostCard = ({ username, avatarSrc, time, location, title, description, ima
           <span className="rating">{rating}</span>
           <span className="mood">{mood}</span>
         </div>
+        </Link>
       </div>
       <div className="post-interactions">
         <span className="likes">❤️ 13</span>

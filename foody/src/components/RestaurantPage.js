@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './RestaurantPage.css'; // Make sure to create and style this CSS file
 import restaurantpic from '../assets/restaurant.jpg'; 
 import mapImage from '../assets/map.jpg';
@@ -8,6 +8,13 @@ import sashimi from '../assets/sashimi.jpg';
 
 
 const RestaurantPage = () => {
+
+  
+    const [isSaved, setIsSaved] = useState(false);
+
+    const handleSave = () => {
+      setIsSaved(!isSaved);
+    };
 
   // Hardcoded data for the restaurant page
   const restaurant = {
@@ -79,7 +86,13 @@ const RestaurantPage = () => {
         </div>
       </div>
       
-      <button className="save-restaurant-button">Save restaurant</button>
+      <button 
+        className={`save-restaurant-button ${isSaved ? 'saved' : ''}`}
+        onClick={handleSave}
+      >
+        {isSaved ? 'Saved' : 'Save restaurant'}
+      </button>
+
     </div>
   );
 };

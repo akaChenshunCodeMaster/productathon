@@ -2,13 +2,14 @@
 body, html {
     margin: 0;
     padding: 0;
-    height: 100%;
   }
   
   .smartphone-container {
-    max-width: 375px; /* This is a typical smartphone width */
-    margin: 0 auto; /* Centers the container */
-    height: 100%;
-    box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Optional: Adds a shadow for visual effect */
-    overflow: hidden; /* Prevents scrolling on the x-axis */
-  }
+    max-width: 375px;
+  margin: 0 auto;
+  /* Removed height: 100%; to allow natural document flow */
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  overflow-x: hidden;
+  /* Padding-bottom should be at least the height of the nav bar or more */
+  padding-bottom: 100px; /* Adjust this value if your navbar is taller */
+}

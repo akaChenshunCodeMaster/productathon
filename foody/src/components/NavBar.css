@@ -4,25 +4,28 @@
     justify-content: space-around;
     align-items: center;
     background-color: #fff; /* Or any other color as per your design */
-    padding: 5px 0; /* Reduced padding for a smaller bar */
-    /* Removed position: fixed and related properties */
-    width: 100%; /* Full width */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Optional: lighter shadow for subtlety */
-  }
+    padding: 5px 0; /* Padding for the bar */
+    position: fixed; /* Stick it to the bottom */
+    bottom: 0; /* At the bottom of the page */
+    left: 0; /* Stretch from the left */
+    right: 0; /* To the right, ensures full width */
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.05); /* Shadow to lift the bar off the page */
+    z-index: 1000; /* Ensure it's above other content */
+}
   
-  .nav-item {
+.nav-item {
     text-align: center;
-    padding: 0 10px; /* Reduced padding around the nav items */
-  }
+    text-decoration: none;
+    padding: 0 10px; /* Padding around the nav items */
+}
   
-  .nav-item img { /* Assuming you're using images for icons */
-    width: 20px; /* Smaller icons */
+.nav-item img { /* Assuming you're using images for icons */
+    width: 20px; /* Icon size */
     height: auto; /* Maintain aspect ratio */
     margin-bottom: 4px; /* Space above the text */
-  }
+}
   
-  .nav-item span {
+.nav-item span {
     display: block;
-    font-size: 0.8em; /* Smaller text */
-  }
-  
+    font-size: 0.8em; /* Text size */
+}
