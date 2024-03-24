@@ -1,0 +1,112 @@
+/* RestaurantPage.css */
+.restaurant-page {
+    max-width: 500px;
+    margin: auto;
+    background: #fff; /* Assuming a white background */
+    padding: 20px; /* Add padding around the content */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for the whole page */
+    border-radius: 20px; /* Rounded corners for the page */
+  }
+  
+  .restaurant-image {
+    width: 100%;
+    border-top-left-radius: 20px; /* Round the top corners of the image */
+    border-top-right-radius: 20px; /* Round the top corners of the image */
+    /* object-fit: cover; /* Keep this if your images need to be cover */
+  }
+  
+  .restaurant-name {
+    font-size: 24px;
+    margin-top: 10px;
+    font-weight: bold; /* If you want the name to be bold */
+    color: #333; /* Adjust the color to match your design */
+  }
+  
+  .restaurant-rating {
+    /* Add styles for the rating */
+    display: inline-block; /* Make the rating an inline element */
+    background: orange; /* Background color for the rating */
+    color: white; /* Text color for the rating */
+    padding: 5px 10px; /* Padding inside the rating box */
+    border-radius: 10px; /* Rounded corners for the rating box */
+    margin-right: 10px; /* Space after the rating */
+  }
+  
+
+  .map-container {
+    position: relative; /* This allows us to absolutely position the link within */
+    margin-top: 20px; /* Space above the map */
+  }
+  
+  .map-image {
+    width: 100%; /* Full width */
+    display: block; /* Remove any extra space below the image */
+  }
+  
+  .google-maps-link {
+    position: absolute; /* Position it over the image */
+    bottom: 10px; /* Distance from the bottom of the image */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Adjust horizontal centering */
+    background-color: #FF5733; /* Button background color */
+    color: white; /* Text color */
+    padding: 10px 20px; /* Padding inside the button */
+    border-radius: 20px; /* Rounded corners */
+    text-decoration: none; /* Remove underline from the link */
+    font-weight: bold; /* Optional: if you want the text to be bold */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    white-space: nowrap; /* Keep the text on a single line */
+  }
+  
+  .restaurant-description {
+    margin: 10px 0; /* Space above and below the description */
+  }
+  
+  .dishes-from-community {
+    margin-top: 20px; /* Space from the previous section */
+  }
+  
+  .dishes-container {
+    display: flex;
+    flex-direction: column; /* Stack dishes vertically */
+    gap: 20px; /* Space between dishes */
+  }
+  
+  /* Style for each dish card within the dishes-container */
+  .dish-card {
+    min-width: 140px; /* Minimum width for each dish card */
+    /* Add other styles as necessary */
+  }
+
+  .dish-item {
+    background: #fff; /* Assuming a white background for each dish card */
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for each dish card */
+  }
+
+  .dish-item img {
+    width: 100%; /* Full width of the container */
+    border-radius: 10px; /* Rounded corners for images */
+    margin-bottom: 10px; /* Space below the image */
+  }
+  
+  .save-restaurant-button {
+    background-color: #FF5733;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 20px; /* Space from the last element */
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Other button styles */
+  }
+  
+  @media (max-width: 600px) {
+    .restaurant-page {
+      border-radius: 0; /* Remove rounded corners on smaller screens */
+    }
+  }
+  

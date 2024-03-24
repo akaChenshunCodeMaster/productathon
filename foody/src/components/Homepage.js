@@ -7,6 +7,7 @@ import userAvatar from '../assets/unsplash_v2aKnjMbP_k.jpg';
 import Header from './Header'; 
 import NavigationTabs from './NavigationTabs'; // Make sure to import the NavigationTabs component
 
+
 const HomePage = () => {
   // Assuming posts is an array of post objects with the needed properties
   const posts = [

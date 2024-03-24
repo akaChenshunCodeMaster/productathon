@@ -5,6 +5,7 @@ import HomePage from './components/Homepage';
 import SearchPage from './components/SearchPage.js';
 import ProfilePage from './components/ProfilePage'; 
 import NavBar from './components/NavBar';
+import RestaurantPage from './components/RestaurantPage';
 import '../src/styles/global.css';
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
       <div className="App">
         <Routes>
           <Route path="/" element={<HomePage />} />
+          <Route path="/restaurant/:name" element={<RestaurantPage />} />
           <Route path="/search" element={<SearchPage />} />
           <Route path="/profile" element={<ProfilePage />} />
         </Routes>

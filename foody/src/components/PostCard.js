@@ -1,6 +1,7 @@
 // PostCard.js
 import React from 'react';
 import './PostCard.css'; // Make sure to create this CSS file to style your component
+import { Link } from 'react-router-dom';
 
 
 const PostCard = ({ username, avatarSrc, time, location, title, description, imageSrc, price, rating, mood }) => {
@@ -14,7 +15,9 @@ const PostCard = ({ username, avatarSrc, time, location, title, description, ima
         </div>
       </div>
       <div className="post-body">
-        <div className="restaurant-name">{location}</div>
+        <div className="restaurant-name">
+        <Link to={`/restaurant/${location.replace(/\s+/g, '-').toLowerCase()}`}>{location}</Link>
+        </div>
         <div className="post-title">{title}</div>
         <div className="post-description">{description}</div>
         <img className="post-image" src={imageSrc} alt="Dish" />

@@ -64,6 +64,48 @@
     font-weight: bold; /* Optional: if you want the text to be bold */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add some shadow for depth */
   }
+
+  .profiles-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+  
+  .profile-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 120px; /* Adjust the width as necessary */
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff; /* Or any color you prefer */
+  }
+  
+  .profile-avatar {
+    width: 80px; /* Adjust as necessary */
+    height: 80px; /* Adjust as necessary */
+    border-radius: 50%; /* Circular avatar */
+    margin-bottom: 10px;
+  }
+  
+  .profile-info h3 {
+    margin: 0;
+    font-size: 14px; /* Adjust as necessary */
+  }
+  
+  .profile-info p {
+    margin: 0;
+    color: #666; /* Adjust as necessary */
+    font-size: 12px; /* Adjust as necessary */
+  }
+  
+  .profile-info span {
+    font-size: 12px; /* Adjust as necessary */
+    color: #333; /* Adjust as necessary */
+  }
   
   @media (max-width: 600px) {
     .dish-card, .restaurant-card {
