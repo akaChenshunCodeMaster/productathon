@@ -1,0 +1,22 @@
+/* Header.module.css */
+.header {
+    display: flex;
+    align-items: center; /* This centers the items vertically */
+    justify-content: flex-start; /* Aligns items to the start of the main axis */
+    padding: 0 20px; /* Padding on both sides */
+    gap: 10px; /* Space between the logo and the text */
+    color:#EB5635;
+  }
+  
+  .logo {
+    display: block; /* Ensures the logo is treated as a block-level element */
+    /* If the logo has excess space, you might want to adjust the size here */
+  }
+  
+  .title {
+    margin: 0; /* Resets default margin */
+    display: inline-block; /* Align with the logo */
+    vertical-align: middle; /* Center align vertically in case it's not perfectly aligning */
+    /* Add font size, family, and weight as per your Figma design */
+  }
+  
