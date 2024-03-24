@@ -4,14 +4,18 @@ import './PostCard.css'; // Make sure to create this CSS file to style your comp
 import { Link } from 'react-router-dom';
 
 
-const PostCard = ({ username, avatarSrc, time, location, title, description, imageSrc, price, rating, mood }) => {
+const PostCard = ({name, username, avatarSrc, time, location, title, description, imageSrc, price, rating, mood }) => {
   return (
     <div className="post-card">
       <div className="post-header">
         <img className="user-avatar" src={avatarSrc} alt={`${username} avatar`} />
         <div className="user-details">
-          <div className="username">@{username}</div>
-          <div className="post-time">{time} ago</div>
+        <div className="name-and-username">
+        <span className="user-real-name">{name}</span> {/* Add this span for the real name */}
+        <span className="username">@{username}</span>
+      </div>
+      <div className="post-time">{time} ago</div>
+
         </div>
       </div>
       

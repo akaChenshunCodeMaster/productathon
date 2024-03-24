@@ -12,7 +12,8 @@ const HomePage = () => {
   // Assuming posts is an array of post objects with the needed properties
   const posts = [
     {
-      username: 'Ryan Joseph',
+      name: 'Ryan Joseph',
+      username: 'ryan',
       avatarSrc: userAvatar,
       time: '2h',
       location: 'Belisso',
@@ -26,7 +27,8 @@ const HomePage = () => {
     },
 
     {
-        username: 'Sarah Johnson',
+        name: 'Sarah Johnson',
+        username: 'sarah',
         avatarSrc: saraAvatar,
         time: '5h',
         location: 'Azumi',
@@ -43,11 +45,12 @@ const HomePage = () => {
 
   return (
     <div className="home-page">
-        <Header />
-        <NavigationTabs />
+      <Header />
+      <NavigationTabs />
       <div className="posts">
         {posts.map((post, index) => (
-          <PostCard key={index} {...post} />
+          // Now pass the 'name' prop to the PostCard component
+          <PostCard key={index} name={post.name} {...post} />
         ))}
       </div>
     </div>

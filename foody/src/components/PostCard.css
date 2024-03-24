@@ -13,7 +13,7 @@
   .post-header {
     display: flex;
     align-items: center;
-    margin-bottom: 16px; /* Increased bottom margin */
+    margin-bottom: 16px;
   }
   
   .user-avatar {
@@ -28,15 +28,40 @@
     flex-direction: column;
   }
   
-  .username {
+  .name-and-username {
+    display: flex;
+    align-items: baseline;
+  }
+  
+  .user-real-name {
+    color: var(--Primary-Dark, #1C1C1C);
+    text-align: center;
+    font-family: "Geist Variable";
+    font-size: 16px;
+    font-style: normal;
+    
+    line-height: normal;
     font-weight: bold;
-    color: #333; /* Darker color for the text */
-    margin-bottom: 4px; /* Space between username and post time */
+
+  /* Add your desired spacing here, for example: */
+     margin-right: 8px;
+  }
+  
+  .username {
+    text-align: center;
+   font-family: "Geist Variable";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: bold;
+  color: #555;
+  line-height: normal;
   }
   
   .post-time {
-    color: #999; /* Lighter color for time text */
-    font-size: 0.8em; /* Smaller text size for time */
+    color: #999;
+    font-size: 0.8em;
+    /* Add a top margin if you want to push it down a bit */
+    margin-top: 4px;
   }
   
   .restaurant-name {

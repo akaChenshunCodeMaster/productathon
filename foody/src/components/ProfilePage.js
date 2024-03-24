@@ -17,7 +17,8 @@ const ProfilePage = () => {
 
   const posts = [
     {
-      username: 'Ryan Joseph',
+      name: 'Ryan Joseph',
+      username: 'ryan',
       avatarSrc: userAvatar,
       time: '2h',
       location: 'Belisso',
@@ -36,7 +37,8 @@ const ProfilePage = () => {
   const savedPosts = [
 
     {
-      username: 'Sarah Johnson',
+      name: 'Sarah Johnson',
+        username: 'sarah',
       avatarSrc: saraAvatar,
       time: '5h',
       location: 'Azumi',
