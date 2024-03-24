@@ -1,10 +1,9 @@
-/* src/components/SearchPage.css */
+/* SearchPage.css */
 .search-page {
     padding: 20px;
   }
   
   .search-bar {
-    position: relative;
     margin-bottom: 20px;
   }
   
@@ -15,22 +14,60 @@
     border-radius: 20px;
   }
   
-  .dishes-section,
-  .restaurants-section {
-    margin-bottom: 20px;
-  }
-  
-  h2 {
-    color: #333;
+  .section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin-bottom: 10px;
   }
   
-  .view-more {
-    background: none;
-    border: none;
-    color: #007BFF;
-    cursor: pointer;
+  .cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px; /* Adjust as per design */
+    justify-content: space-around; /* This will space out the cards evenly */
+    max-width: 500px; /* Adjust to match the homepage content width */
+    margin: 0 auto; /* Centers the container */
+  }
+
+  .resturantcards-container {
+    display: flex;
+    flex-direction: column; /* Stack the cards vertically */
+    gap: 20px; /* Adjust as per design */
+    align-items: center; /* Center the cards */
+    max-width: 500px; /* Adjust to match the homepage content width */
+    margin: 20px auto; /* Centers the container with a margin top and bottom */
   }
   
-  /* Add additional styling as per your Figma design */
+  .dish-card{
+    width: calc(50% - 20px); /* Adjust width taking into account the gap */
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  }
+
+   .restaurant-card {
+    width: 100%; /* Card takes full width of the container */
+    margin-bottom: 20px; /* Space below each card */
+    /* No negative margins */
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  }
+  
+  /* Styles for the "View More" button */
+  .view-more {
+    background-color:#FF5733;; /* Your theme color */
+    color: white;
+    border: none;
+    border-radius: 20px; /* Rounded borders */
+    padding: 8px 16px; /* Bigger padding for a button-like appearance */
+    cursor: pointer;
+    font-weight: bold; /* Optional: if you want the text to be bold */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add some shadow for depth */
+  }
+  
+  @media (max-width: 600px) {
+    .dish-card, .restaurant-card {
+      flex-basis: 100%; /* Full width on smaller screens */
+    }
+  }
   
