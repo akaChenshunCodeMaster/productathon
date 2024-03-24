@@ -1,0 +1,71 @@
+.create-post-container {
+    padding: 20px;
+    text-align: center; /* Center everything */
+  }
+  
+  .upload-photo-area {
+    margin: 20px 0;
+    position: relative; /* For absolute positioning of the button */
+  }
+  
+  .placeholder-container {
+    width: 100%;
+    height: 200px; /* Match the height in the image */
+    background-color: #f3f3f3; /* Light gray background */
+    border: 1px solid #e1e1e1; /* Solid border */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px; /* Rounded corners for the container */
+  }
+  
+  .image-preview {
+    max-width: 100%;
+    border-radius: 10px; /* Rounded corners for the image */
+    margin-bottom: 20px; /* Space below the preview image */
+  }
+  
+  .add-photo-button {
+    position: absolute;
+    bottom: -25px; /* Half the height of the button for a floating effect */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #FF5733;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold; /* Make the text bold */
+    text-transform: uppercase; /* Uppercase text */
+  }
+  
+  .next-button {
+    background-color: #FF5733; /* Orange color for the button */
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 12px 24px;
+    cursor: pointer;
+    font-weight: bold; /* Make the text bold */
+    text-transform: uppercase; /* Uppercase text */
+    width: calc(100% - 40px); /* Full width minus padding */
+    margin-top: 50px; /* Space above the button */
+  }
+  
+  /* Additional styles for responsiveness */
+  @media (max-width: 600px) {
+    .create-post-container {
+      padding: 10px;
+    }
+  
+    .placeholder-container {
+      height: 150px; /* Adjust for smaller screens */
+    }
+  
+    .add-photo-button,
+    .next-button {
+      padding: 10px 20px;
+    }
+  }
+  

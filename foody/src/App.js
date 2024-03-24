@@ -8,6 +8,7 @@ import NavBar from './components/NavBar';
 import RestaurantPage from './components/RestaurantPage';
 import ExpandedPost from './components/ExpandedPost';
 import '../src/styles/global.css';
+import CreatePost from './components/CreatePost';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/restaurant/:name" element={<RestaurantPage />} />
+          <Route path="/create-post" element={<CreatePost />} />
           <Route path="/post" element={<ExpandedPost />} />
           <Route path="/search" element={<SearchPage />} />
           <Route path="/profile" element={<ProfilePage />} />

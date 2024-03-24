@@ -8,6 +8,7 @@ import NavigationTabs from './NavigationTabs'; // Make sure to import the Naviga
 import annaAvatar from '../assets/anna.jpg';
 import pizza from '../assets/pizza.jpg';
 import React, { useState } from 'react';
+import AddButton from './AddButton';
 
 
 
@@ -81,6 +82,7 @@ const HomePage = () => {
     <div className="home-page">
       <Header />
       {/* Add tab switching functionality */}
+      <AddButton />
       <NavigationTabs onTabChange={handleTabChange} />
       <div className="posts">
         {
