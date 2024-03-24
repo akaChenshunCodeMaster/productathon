@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/productathon/static/css/main.26598cc3.css",
-    "main.js": "/productathon/static/js/main.62378f95.js",
+    "main.css": "/productathon/static/css/main.6451afac.css",
+    "main.js": "/productathon/static/js/main.730b7603.js",
     "static/js/453.1418cba3.chunk.js": "/productathon/static/js/453.1418cba3.chunk.js",
     "static/media/AlaskaRoll.jpg": "/productathon/static/media/AlaskaRoll.7eb8755352f40733cdaa.jpg",
     "static/media/image 14.jpg": "/productathon/static/media/image 14.f700b7a9724ffeea2a54.jpg",
@@ -12,12 +12,12 @@
     "static/media/azumi.jpg": "/productathon/static/media/azumi.83c4ee43704c33c69284.jpg",
     "static/media/dragonroll.jpg": "/productathon/static/media/dragonroll.98543ca87d4366ee6dd1.jpg",
     "index.html": "/productathon/index.html",
-    "main.26598cc3.css.map": "/productathon/static/css/main.26598cc3.css.map",
-    "main.62378f95.js.map": "/productathon/static/js/main.62378f95.js.map",
+    "main.6451afac.css.map": "/productathon/static/css/main.6451afac.css.map",
+    "main.730b7603.js.map": "/productathon/static/js/main.730b7603.js.map",
     "453.1418cba3.chunk.js.map": "/productathon/static/js/453.1418cba3.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.26598cc3.css",
-    "static/js/main.62378f95.js"
+    "static/css/main.6451afac.css",
+    "static/js/main.730b7603.js"
   ]
 }
