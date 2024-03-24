@@ -1,0 +1,54 @@
+/* DescribeRestaurant.css */
+.describe-restaurant-container {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    max-width: 400px; /* Adjust as needed */
+    margin: auto;
+  }
+  
+  .input-field {
+    margin-bottom: 15px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+  }
+  
+  .rating-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+  }
+  
+  .rating-container button {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .on .star {
+    color: #FFD700; /* Gold color for active stars */
+  }
+  
+  .off .star {
+    color: #ccc; /* Light grey for inactive stars */
+  }
+  
+  .mood-select.input-field {
+    appearance: none; /* to remove default style of select in some browsers */
+    /* Add custom arrow icon or use libraries like select2 for better styling */
+  }
+  
+  .next-button {
+    background-color: #FF5733; /* Theme color */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  /* Add media queries and other responsive design techniques as needed */
+  

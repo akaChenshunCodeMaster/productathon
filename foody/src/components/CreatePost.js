@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import './CreatePost.css'; // Make sure to style your component
 
 const CreatePost = () => {
     const [selectedImage, setSelectedImage] = useState(null);
+    const navigate = useNavigate();
   
     const handleImageChange = (event) => {
       setSelectedImage(event.target.files[0]);
@@ -11,6 +13,7 @@ const CreatePost = () => {
     const handleNext = () => {
       // This function will be called when the Next button is clicked
       // You will handle the navigation to the next step here
+      navigate('/describe');
       console.log('Go to the next step');
     };
   

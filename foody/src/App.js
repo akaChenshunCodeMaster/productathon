@@ -9,6 +9,8 @@ import RestaurantPage from './components/RestaurantPage';
 import ExpandedPost from './components/ExpandedPost';
 import '../src/styles/global.css';
 import CreatePost from './components/CreatePost';
+import DescribeDish from './components/DescribeDish';
+import DescribeRestaurant from './components/DescribeRestaurant'; 
 
 function App() {
   return (
@@ -17,6 +19,8 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/restaurant/:name" element={<RestaurantPage />} />
+          <Route path="/describe" element={<DescribeDish />} />
+          <Route path="/describe-restaurant" element={<DescribeRestaurant />} />
           <Route path="/create-post" element={<CreatePost />} />
           <Route path="/post" element={<ExpandedPost />} />
           <Route path="/search" element={<SearchPage />} />
