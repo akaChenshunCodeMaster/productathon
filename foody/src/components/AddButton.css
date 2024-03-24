@@ -15,5 +15,14 @@
     cursor: pointer;
     outline: none;
     z-index: 1001; /* Should be higher than the NavBar's z-index */
-  }
-  
+    
+    /* Flexbox styles to center content */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* Ensure the text is centered and does not move on click */
+    text-align: center;
+    line-height: 1; /* Prevents the plus sign from being offset */
+    user-select: none; /* Prevents the text from being selectable */
+}
