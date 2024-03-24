@@ -1,7 +1,7 @@
 // Header.js
 import React from 'react';
 import styles from '../styles/Header.module.css';
-import logo from '../assets/coffee.jpg'; // Update the path if needed
+import logo from '../assets/Vector.jpg'; // Update the path if needed
 
 function Header() {
   return (
