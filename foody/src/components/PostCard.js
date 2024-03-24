@@ -4,6 +4,7 @@ import './PostCard.css'; // Make sure to create this CSS file to style your comp
 import { Link } from 'react-router-dom';
 
 
+
 const PostCard = ({name, username, avatarSrc, time, location, title, description, imageSrc, price, rating, mood }) => {
   return (
     <div className="post-card">
@@ -20,18 +21,26 @@ const PostCard = ({name, username, avatarSrc, time, location, title, description
       </div>
       
       <div className="post-body">
-        <div className="restaurant-name">
-        <Link to={`/restaurant/${location.replace(/\s+/g, '-').toLowerCase()}`}>{location}</Link>
-        </div>
+      <button className="restaurant-button">
+      📌 <Link to={`/restaurant/${location.replace(/\s+/g, '-').toLowerCase()}`}>{location}</Link>
+      </button>
+
         <Link to="/post" className="post-link"> {/* Fixed path for all posts */}
         <div className="post-title">{title}</div>
         <div className="post-description">{description}</div>
-        <img className="post-image" src={imageSrc} alt="Dish" />
         <div className="post-footer">
-          <span className="price">{price}</span>
-          <span className="rating">{rating}</span>
-          <span className="mood">{mood}</span>
-        </div>
+  <button className="price-button">
+    <span className="price-icon">💰</span>{price}
+  </button>
+  <button className="rating-button">
+    <span className="rating-icon">⭐️</span>{rating}
+  </button>
+  <button className="mood-button">{mood}</button>
+</div>
+
+
+        <img className="post-image" src={imageSrc} alt="Dish" />
+       
         </Link>
       </div>
       <div className="post-interactions">
