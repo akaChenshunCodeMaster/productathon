@@ -6,6 +6,7 @@
     padding: 20px; /* Add padding around the content */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for the whole page */
     border-radius: 20px; /* Rounded corners for the page */
+    padding-bottom: 70px;
   }
   
   .restaurant-image {
@@ -102,6 +103,10 @@
     width: 100%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     /* Other button styles */
+  }
+
+  .save-restaurant-button.saved {
+    background-color: green;
   }
   
   @media (max-width: 600px) {
