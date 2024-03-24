@@ -38,7 +38,7 @@ const HomePage = () => {
     {
         name: 'Sarah Johnson',
         username: 'sarah',
-        avatarSrc: annaAvatar,
+        avatarSrc: saraAvatar,
         time: '5h',
         location: 'Azumi',
         title: 'Alaska Roll',
@@ -60,7 +60,7 @@ const HomePage = () => {
     {
       name: 'Anna Jane',
         username: 'anna',
-      avatarSrc: saraAvatar,
+      avatarSrc: annaAvatar,
       time: '5h',
       location: 'Pizza Bar',
       title: 'Oregano Chicken Pizza',
