@@ -1,0 +1,22 @@
+/* NavigationTabs.module.css */
+.tabs {
+  display: flex;
+  justify-content: center;
+  background-color: #ffffff;
+  box-shadow: 0 2px 2px -2px gray; /* Add some shadow for separation */
+}
+
+.tab, .activeTab {
+  flex: 1;
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+.activeTab {
+  color: #FF5733; /* Active tab color - Adjust to your theme color */
+  border-bottom: 2px solid #FF5733; /* Underline for active tab */
+}
