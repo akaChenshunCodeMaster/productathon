@@ -9,7 +9,6 @@ import alaskaroll from '../assets/AlaskaRoll.jpg';
 import azumi from '../assets/azumi.jpg';
 import saraAvatar from '../assets/Sara.jpg'; 
 import userAvatar from '../assets/unsplash_v2aKnjMbP_k.jpg'; 
-import NavigationTabs from './NavigationSearch';
 
 const SearchPage = () => {
   // Example data - replace with real data fetched from your server or API
@@ -17,8 +16,9 @@ const SearchPage = () => {
     {
       dishName: 'Eggs Benedict with Hash Browns',
       imageUrl: image14, // Replace with actual path
+      
       location: 'Belisso',
-      user: '@ryan',
+      user: '@ryan'
     },
 
     {
@@ -69,7 +69,7 @@ const SearchPage = () => {
         <input type="text" placeholder="Search for dishes, restaurant, profiles..." />
       </div>
 
-      <NavigationTabs />
+    
 
       {/* Dishes Section */}
       <div className="section">
@@ -121,3 +121,4 @@ const SearchPage = () => {
 };
 
 export default SearchPage;
+

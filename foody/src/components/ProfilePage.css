@@ -1,36 +1,36 @@
 .pageBackground {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
   max-width: 353px;
   padding: 24px;
-  flex-direction: column;
-  align-items: center;
   gap: 16px;
+  margin: auto;
+  background: var(--white, #fff);
   border-radius: 23px;
-  background: var(--White, #FFF);
-  
 }
 
 .profileCard {
   display: flex;
-  width: 100%;
   flex-direction: column;
   align-items: center;
   gap: 10px;
-  background: var(--White, #FFF);
+  width: 100%;
   padding: 16px;
+  background: var(--white, #fff);
   border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .avatar {
   width: 80px;
   height: 80px;
   border-radius: 50%;
-  background-image: url(../assets/unsplash_v2aKnjMbP_k.jpg);
+  background-image: url('../assets/unsplash_v2aKnjMbP_k.jpg');
   background-size: cover;
   background-position: center;
-  margin-bottom: 20px; /* Adjust space below the avatar */
+  margin-bottom: 20px;
 }
 
 .name, .username, .statNumber, .statLabel {
@@ -39,71 +39,59 @@
 }
 
 .name {
+  color: #1C1C1C;
   font-size: 20px;
   font-weight: 600;
-  color: var(--Primary-Dark, #1C1C1C);
-  margin-bottom: 4px; /* Adjust name bottom margin */
+  margin-bottom: 4px;
 }
 
 .username {
-  font-size: 16px;
   color: #888888;
-  margin-bottom: 0; /* Remove margin to move up closer to the name */
-  margin-top: -20px; /* Pull the username up closer to the name */
-  margin-bottom: 24px;
+  font-size: 16px;
+  margin-bottom: 0;
+  margin-top: -20px;
 }
 
 .statsContainer {
   display: flex;
-  justify-content: space-around; /* Change to space-around for equal spacing */
+  justify-content: space-around;
   align-items: center;
   width: 100%;
-  padding: 0; /* Reset padding to allow flex spacing to take effect */
 }
 
 .statItem {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* Removed margin-right to let flexbox handle spacing */
 }
 
 .statNumber {
+  color: var(--Primary-Dark, #1C1C1C);
   font-size: 20px;
   font-weight: 600;
-  color: var(--Primary-Dark, #1C1C1C);
-  /* Add margin-bottom if needed for spacing between number and label */
 }
 
 .statLabel {
-  font-size: 16px;
   color: var(--Secondary, #72767F);
+  font-size: 16px;
 }
 
-
 .editButton {
-  padding: 12px 60px; /* Increase padding for a larger button */
-  margin-top: 20px; /* Add space above the button */
-  border-radius: 50px;
+  padding: 12px 60px;
+  margin-top: 20px;
   background: #EDEDED;
   font-weight: 600;
   border: none;
   cursor: pointer;
   outline: none;
-  align-self: center; /* Centers the button */
+  border-radius: 50px;
+  align-self: center;
 }
-
-/* Remove the order property to keep the default order */
-.statItem { 
-  order: 0; 
-}
-
 
 .profile-navigation {
   display: flex;
-  justify-content: flex-start;
-  border-bottom: 2px solid #EDEDED; /* Light grey border */
-  margin-bottom: 20px; /* Space below the tabs */
+  border-bottom: 2px solid #EDEDED;
+  margin-bottom: 20px;
 }
 
 .nav-button {
@@ -113,14 +101,26 @@
   cursor: pointer;
   transition: all 0.3s;
   font-weight: 600;
-  color: #757575; /* Light color for non-active items */
-  border-bottom: 3px solid transparent; /* Invisible border to match active tab */
+  color: #757575;
+  border-bottom: 3px solid transparent;
 }
 
 .nav-button.active {
-  color: #212121; /* Dark color for active item */
-  border-bottom: 3px solid #FFA500; /* Orange bottom border for active item */
+  color: #212121;
+  border-bottom: 3px solid #FFA500;
 }
 
+.content {
+  width: 100%;
+}
 
-/* Add any additional styles needed to match your design */
+.orange-button {
+  display: inline-flex;
+  color: #EB5635;
+padding: 5px 15px;
+flex-direction: column;
+align-items: flex-start;
+gap: 10px;
+border-radius: 50px;
+background: #F3DBDA;
+}
