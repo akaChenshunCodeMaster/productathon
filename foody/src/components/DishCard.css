@@ -4,3 +4,48 @@
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
+
+  .dish-name {
+    font-size: 16px; /* change font size as needed */
+    color: #1C1C1C; /* change to desired font color */
+    font-weight: bold; /* if you want the name to be bold */
+    /* add any other styles you want to apply, like margin, padding, etc. */
+  }
+  
+  .restaurant-button {
+    font-size: 14px;
+    padding: 5px 15px; 
+    margin: 0; 
+    border-radius: 15px; 
+    background-color: #F3DBDA; 
+    color: #EB5635; 
+    border: none; 
+    cursor: pointer; 
+    display: inline-flex; 
+    align-items: center; 
+    justify-content: center; 
+    text-decoration: none; 
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    font-family: "Geist Variable";
+    font-weight: 600;
+  }
+  
+  .restaurant-button .icon {
+    
+    margin-right: 5px; 
+  }
+  
+  .restaurant-button a {
+    text-decoration: none; 
+    color: inherit; 
+  }
+
+  .user {
+    color: var(--Secondary, #72767F);
+    font-family: "Geist Variable";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.14px;
+  }

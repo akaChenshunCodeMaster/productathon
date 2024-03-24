@@ -1,6 +1,8 @@
 // src/components/RestaurantCard.js
 import React from 'react';
 import './RestaurantCard.css'; // Create and style your RestaurantCard component
+import { Link } from 'react-router-dom';
+
 
 const RestaurantCard = ({ name, imageUrl, address, rating }) => {
   return (
