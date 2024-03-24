@@ -42,6 +42,7 @@ const HomePage = () => {
   return (
     <div className="home-page">
         <Header />
+        
       <div className="posts">
         {posts.map((post, index) => (
           <PostCard key={index} {...post} />

@@ -1,24 +1,52 @@
 // src/components/SearchPage.js
 import React from 'react';
-import './SearchPage.css'; // Make sure to create this CSS file to style your component
+import DishCard from './DishCard';
+import RestaurantCard from './RestaurantCard';
+import './SearchPage.css';
+import image14 from '../assets/image 14.jpg';
+import belisso from '../assets/belisso.jpg';
+import alaskaroll from '../assets/AlaskaRoll.jpg';
 
 const SearchPage = () => {
+  // Example data - replace with real data fetched from your server or API
+  const exampleDishes = [
+    {
+      dishName: 'Eggs Benedict with Hash Browns',
+      imageUrl: image14, // Replace with actual path
+      user: '@ryan',
+      location: 'Belisso',
+      rating: '4/5'
+    },
+    // ... more dishes
+  ];
+
+  const exampleRestaurants = [
+    {
+      name: 'Belisso',
+      imageUrl: belisso, // Replace with actual path
+      address: '1235 Produthack Way, Vancouver',
+      rating: '4.5/5'
+    },
+    // ... more restaurants
+  ];
+
   return (
     <div className="search-page">
-      <div className="search-bar">
-        <input type="text" placeholder="Search for dishes, restaurant, profiles..." />
-      </div>
+    <div className="search-bar">
+    <input type="text" placeholder="Search for dishes, restaurant, profiles..." />
+    </div>
       <section className="dishes-section">
-        <h2>Dishes for you</h2>
-        <button className="view-more">View More</button>
-        {/* Placeholder for dishes list */}
+        {/* ... */}
+        {exampleDishes.map((dish, index) => (
+          <DishCard key={index} {...dish} />
+        ))}
       </section>
       <section className="restaurants-section">
-        <h2>Restaurants for you</h2>
-        <button className="view-more">View More</button>
-        {/* Placeholder for restaurants list */}
+        {/* ... */}
+        {exampleRestaurants.map((restaurant, index) => (
+          <RestaurantCard key={index} {...restaurant} />
+        ))}
       </section>
-      {/* Add components or elements for listing dishes and restaurants */}
     </div>
   );
 };
