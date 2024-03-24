@@ -1,4 +1,3 @@
-import React from 'react';
 import PostCard from './PostCard';
 import image14 from '../assets/image 14.jpg';
 import alaskaroll from '../assets/AlaskaRoll.jpg';
@@ -6,17 +5,39 @@ import saraAvatar from '../assets/Sara.jpg';
 import userAvatar from '../assets/unsplash_v2aKnjMbP_k.jpg'; 
 import Header from './Header'; 
 import NavigationTabs from './NavigationTabs'; // Make sure to import the NavigationTabs component
+import annaAvatar from '../assets/anna.jpg';
+import pizza from '../assets/pizza.jpg';
+import React, { useState } from 'react';
+
 
 
 const HomePage = () => {
   // Assuming posts is an array of post objects with the needed properties
+
+  const [activeTab, setActiveTab] = useState('explore');
+
   const posts = [
     
 
     {
+      name: 'Ryan Joseph',
+      username: 'ryan',
+      avatarSrc: userAvatar,
+      time: '2h',
+      location: 'Belisso',
+      title: 'Eggs Benedict with Hash Browns',
+      description: 'Went to Belisso yesterday just to try their brunch - honestly so worth it!',
+      imageSrc: image14,
+      price: '$16',
+      rating: '4/5',
+      mood: '😊',
+      
+    },
+
+    {
         name: 'Sarah Johnson',
         username: 'sarah',
-        avatarSrc: saraAvatar,
+        avatarSrc: annaAvatar,
         time: '5h',
         location: 'Azumi',
         title: 'Alaska Roll',
@@ -26,22 +47,56 @@ const HomePage = () => {
         rating: '5/5',
         mood: '🤩',
         
-      },
-    // ...more posts
+      }
+
+
+    
   ];
+
+
+  const followedPosts = [
+
+    {
+      name: 'Anna Jane',
+        username: 'anna',
+      avatarSrc: saraAvatar,
+      time: '5h',
+      location: 'Pizza Bar',
+      title: 'Oregano Chicken Pizza',
+      description: 'Decided to try out Pizza Bar ',
+      imageSrc: pizza,
+      price: '$23',
+      rating: '2/5',
+      mood: '🤨️',
+      
+    }
+
+  ];
+
+  const handleTabChange = (tabName) => {
+    setActiveTab(tabName);
+  };
 
   return (
     <div className="home-page">
       <Header />
-      <NavigationTabs />
+      {/* Add tab switching functionality */}
+      <NavigationTabs onTabChange={handleTabChange} />
       <div className="posts">
-        {posts.map((post, index) => (
-          // Now pass the 'name' prop to the PostCard component
-          <PostCard key={index} name={post.name} {...post} />
-        ))}
+        {
+          activeTab === 'explore' ?
+          posts.map((post, index) => (
+            <PostCard key={index} {...post} />
+          ))
+          :
+          followedPosts.map((post, index) => (
+            <PostCard key={index} {...post} />
+          ))
+        }
       </div>
     </div>
   );
 };
+
 
 export default HomePage;

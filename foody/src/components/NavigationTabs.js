@@ -1,20 +1,18 @@
 // NavigationTabs.js
-import React, { useState } from 'react';
+import React from 'react';
 import styles from './Navi.module.css'; // Ensure the path is correct
 
-function NavigationTabs() {
-  const [activeTab, setActiveTab] = useState('explore');
-
+function NavigationTabs({ onTabChange, activeTab }) {
   return (
     <div className={styles.tabs}>
       <button
-        onClick={() => setActiveTab('explore')}
+        onClick={() => onTabChange('explore')}
         className={activeTab === 'explore' ? styles.activeTab : styles.tab}
       >
         Explore
       </button>
       <button
-        onClick={() => setActiveTab('following')}
+        onClick={() => onTabChange('following')}
         className={activeTab === 'following' ? styles.activeTab : styles.tab}
       >
         Following
