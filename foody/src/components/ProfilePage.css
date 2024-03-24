@@ -1,0 +1,70 @@
+/* ProfilePage.css */
+.profilePage {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* This ensures that all content in profilePage is centered horizontally */
+  }
+  
+  .profileHeader {
+    text-align: center; /* This centers the text elements */
+    width: 100%; /* Adjust width as needed, maybe based on a max-width for larger screens */
+  }
+  
+  .userAvatar {
+    width: 100px; /* Set the size of the avatar */
+    height: 100px; /* Set the size of the avatar */
+    border-radius: 50%; /* Make the avatar round */
+    margin: 0 auto; /* This centers the avatar image horizontally */
+    display: block; /* Images are inline by default, block will allow margin: auto to work */
+  }
+  
+  .userStats {
+    display: flex;
+    justify-content: space-around; /* This spreads out your post/follower/following stats */
+    margin-top: 20px; /* Space above the stats */
+  }
+  
+  .editProfileBtn {
+    background-color: #ff5733; /* Your button color */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin-top: 20px; /* Space above the button */
+    cursor: pointer;
+  }
+  
+  .postTabs {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .tabButton {
+    /* Styles for your tab buttons */
+    background-color: transparent; /* No background */
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  /* Add additional styles for active tab button */
+  .activeTabButton {
+    border-bottom: 2px solid #ff5733;
+  }
+  
+  .postGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* This creates a responsive grid */
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .postCard {
+    /* Style for each post card */
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
