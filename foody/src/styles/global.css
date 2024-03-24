@@ -1,0 +1,14 @@
+/* global.css */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+  
+  .smartphone-container {
+    max-width: 375px; /* This is a typical smartphone width */
+    margin: 0 auto; /* Centers the container */
+    height: 100%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Optional: Adds a shadow for visual effect */
+    overflow: hidden; /* Prevents scrolling on the x-axis */
+  }

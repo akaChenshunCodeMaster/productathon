@@ -1,0 +1,36 @@
+/* src/components/SearchPage.css */
+.search-page {
+    padding: 20px;
+  }
+  
+  .search-bar {
+    position: relative;
+    margin-bottom: 20px;
+  }
+  
+  .search-bar input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+  }
+  
+  .dishes-section,
+  .restaurants-section {
+    margin-bottom: 20px;
+  }
+  
+  h2 {
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .view-more {
+    background: none;
+    border: none;
+    color: #007BFF;
+    cursor: pointer;
+  }
+  
+  /* Add additional styling as per your Figma design */
+  

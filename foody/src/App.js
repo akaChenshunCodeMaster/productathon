@@ -5,6 +5,7 @@ import HomePage from './components/Homepage';
 import SearchPage from './components/SearchPage.js';
 import ProfilePage from './components/ProfilePage'; 
 import NavBar from './components/NavBar';
+import '../src/styles/global.css';
 
 function App() {
   return (
