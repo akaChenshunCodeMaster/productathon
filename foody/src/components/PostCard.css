@@ -1,0 +1,101 @@
+/* PostCard.css */
+.post-card {
+    background: #FFFFFF;
+    border-radius: 20px; /* Adjusted for a larger border radius */
+    margin: 10px auto; /* Center the card in the view with auto */
+    padding: 16px; /* Padding inside the card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slightly larger shadow for depth */
+    max-width: 500px; /* Maximum width of the card */
+    width: 100%; /* Make it responsive */
+  }
+  
+  .post-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px; /* Increased bottom margin */
+  }
+  
+  .user-avatar {
+    width: 50px; /* Slightly larger avatar */
+    height: 50px; /* Slightly larger avatar */
+    border-radius: 25px; /* Keep it round */
+    margin-right: 12px; /* Adjust space between avatar and username */
+  }
+  
+  .user-details {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .username {
+    font-weight: bold;
+    color: #333; /* Darker color for the text */
+    margin-bottom: 4px; /* Space between username and post time */
+  }
+  
+  .post-time {
+    color: #999; /* Lighter color for time text */
+    font-size: 0.8em; /* Smaller text size for time */
+  }
+  
+  .restaurant-name {
+    color: #E74C3C; /* Adjust color based on your Figma design */
+    font-weight: bold;
+    margin-bottom: 8px; /* Space between restaurant name and title */
+  }
+  
+  .post-title {
+    font-size: 1em; /* Adjusted font size */
+    font-weight: bold; /* Make title bold */
+    color: #000; /* Black color for the title */
+    margin-bottom: 8px; /* Space between title and description */
+  }
+  
+  .post-description {
+    color: #666; /* Dark grey color for description */
+    margin-bottom: 12px; /* Space between description and image */
+  }
+  
+  .post-image {
+    border-radius: 10px; /* Rounded corners for the image */
+    width: calc(100% + 32px); /* Image width larger than container to align with the card edges */
+    margin-left: -16px; /* Align the image with the left edge of the card */
+    margin-right: -16px; /* Align the image with the right edge of the card */
+    margin-bottom: 16px; /* Space below the image */
+  }
+  
+  .post-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 0.9em;
+  }
+  
+  .post-interactions {
+    display: flex;
+    align-items: center; /* Align interaction icons vertically */
+    justify-content: space-between;
+    margin-top: 8px; /* Space above interactions */
+  }
+  
+  .likes, .comments, .shares {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+  
+  
+  /* Add media query for responsiveness */
+  @media (max-width: 768px) {
+    .post-card {
+      margin: 10px 5px; /* Smaller side margins on mobile */
+      padding: 12px; /* Smaller padding on mobile */
+    }
+  
+    .post-image {
+      width: calc(100% + 24px); /* Smaller total width on mobile */
+      margin-left: -12px; /* Align with the left edge of the card */
+      margin-right: -12px; /* Align with the right edge of the card */
+    }
+  }
+  
