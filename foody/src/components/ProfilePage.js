@@ -5,10 +5,15 @@ import image14 from '../assets/image 14.jpg';
 import PostCard from './PostCard';
 import alaskaroll from '../assets/AlaskaRoll.jpg';
 import saraAvatar from '../assets/Sara.jpg'; 
+import RestaurantCard from './RestaurantCard';
+import belisso from '../assets/belisso.jpg';
+import azumi from '../assets/azumi.jpg';
+
 
 const ProfilePage = () => {
   // State to manage active tab
   const [activeTab, setActiveTab] = useState('posts');
+  const [activeSavedContent, setActiveSavedContent] = useState('posts');
 
   const posts = [
     {
@@ -45,9 +50,31 @@ const ProfilePage = () => {
     }
 
   ];
+
+  const restaurantsData = [
+    {
+      name: 'Belisso',
+      imageUrl: belisso, // Replace with actual path
+      address: '1235 Produthack Way, Vancouver',
+      rating: '4.5/5'
+    },
+
+    {
+        name: 'Azumi',
+        imageUrl: azumi, // Replace with actual path
+        address: '1235 Produthack Way, Vancouver',
+        rating: '4.5/5'
+      },
+    // ... more restaurants
+  ];
+
+  const toggleSavedContent = () => {
+    setActiveSavedContent(activeSavedContent === 'posts' ? 'restaurants' : 'posts');
+  };
+
   return (
     <div className="profileContainer">
-      <div className="profileCard">
+       <div className="profileCard">
         <img src={userAvatar} alt="User Avatar" className="avatar" />
         <h1 className="name">Ryan Joseph</h1>
         <p className="username">@ryan</p>
@@ -69,27 +96,23 @@ const ProfilePage = () => {
       </div>
       
       <div className="profile-navigation">
-        <button 
-          className={`nav-button ${activeTab === 'posts' ? 'active' : ''}`} 
-          onClick={() => setActiveTab('posts')}
-        >
-          Posts
-        </button>
-        <button 
-          className={`nav-button ${activeTab === 'saved' ? 'active' : ''}`} 
-          onClick={() => setActiveTab('saved')}
-        >
-          Saved
-        </button>
+        <button className={`nav-button ${activeTab === 'posts' ? 'active' : ''}`} onClick={() => setActiveTab('posts')}>Posts</button>
+        <button className={`nav-button ${activeTab === 'saved' ? 'active' : ''}`} onClick={() => setActiveTab('saved')}>Saved</button>
+        {/* Additional buttons for other categories */}
       </div>
 
+      {activeTab === 'saved' && (
+        <div className="toggle-saved-content">
+          <button onClick={toggleSavedContent} className="orange-button">
+            {activeSavedContent === 'posts' ? 'Posts' : 'Restaurants'}
+          </button>
+        </div>
+      )}
 
-      <div className="content">
-        {activeTab === 'posts' ? (
-          posts.map((post, index) => <PostCard key={index} {...post} />)
-        ) : (
-          savedPosts.map((post, index) => <PostCard key={index} {...post} />)
-        )}
+<div className="content">
+        {activeTab === 'posts' && posts.map((post, index) => <PostCard key={index} {...post} />)}
+        {activeTab === 'saved' && activeSavedContent === 'posts' && savedPosts.map((post, index) => <PostCard key={index} {...post} />)}
+        {activeTab === 'saved' && activeSavedContent === 'restaurants' && restaurantsData.map((restaurant, index) => <RestaurantCard key={index} {...restaurant} />)}
       </div>
     </div>
   );
